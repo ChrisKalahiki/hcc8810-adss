@@ -25,3 +25,5 @@ python ave_item_score.py
 cd ..
 python app.py
 ```
+
+Updated 09-27-2022
