@@ -63,7 +63,7 @@ print("Training models ...")
 start = time.time()
 
 # This is where you train your model using your algorithm of choice
-algo = als.ImplicitMF(20, iterations=10, method="lu")
+algo = als.BiasedMF(20, iterations=10, method="lu")
 
 algo.fit(ratings_train)
 end = time.time() - start
