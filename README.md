@@ -10,11 +10,18 @@ Updated 09-08-2022
 You need to run the frontend and backend separately. To run the front end, run the following commands in the root directory:
 ```
 cd frontend
+npm install
 npm start
 ```
 
 To run the backend, run the following commands in the root directory:
 ```
 cd api/src/
+python init_app.py
+cd algs/
+python train_implicitMF.py
+python train_resampled_implicitMF.py
+python ave_item_score.py
+cd ..
 python app.py
 ```
