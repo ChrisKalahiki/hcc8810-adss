@@ -14,7 +14,8 @@ from setpath import set_data_path
 from lenskit.datasets import MovieLens
 
 # You can import different algorithms here from Lenskit
-from lenskit.algorithms import als
+# from lenskit.algorithms import als
+from lenskit.algorithms import user_knn as knn # DEBUG: This line was changed
 
 # We need to set the threading later to tbb
 # os.environ['MKL_THREADING_LAYER'] = 'tbb'
@@ -63,7 +64,8 @@ print("Training models ...")
 start = time.time()
 
 # This is where you train your model using your algorithm of choice
-algo = als.BiasedMF(20, iterations=10, method="lu")
+# algo = als.BiasedMF(20, iterations=10, method="lu")
+algo = knn.ItemItem(20) # DEBUG: This line was changed
 
 algo.fit(ratings_train)
 end = time.time() - start
