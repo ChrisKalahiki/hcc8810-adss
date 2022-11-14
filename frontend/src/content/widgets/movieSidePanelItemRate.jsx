@@ -20,7 +20,7 @@ class SidePanelItemRate extends Component {
 						{movie.title + " (" + movie.year + ")"}
 					</p>
 				</div>
-				<StarRatings
+				{/* <StarRatings
 					starRatedColor="rgb(252,229,65)"
 					rating={movie.rating}
 					starHoverColor="rgb(252,229,65)"
@@ -28,7 +28,9 @@ class SidePanelItemRate extends Component {
 					starSpacing="0.25px"
 					changeRating={this.props.ratingsHandler}
 					numberOfStars={5}
-					name={movie.movie_id} />
+					name={movie.movie_id} /> */}
+				<p style={{color: "grey"}} rating={movie.rating} changeRating={this.props.ratingsHandler} name={movie.movie_id}>Like</p>
+				<p style={{color: "grey"}} rating={movie.rating} changeRating={this.props.ratingsHandler} name={movie.movie_id}>Dislike</p>
 			</ListGroup.Item>
 		</>;
 	}

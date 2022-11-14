@@ -32,8 +32,8 @@ class MovieGridItem extends Component {
 							numberOfStars={5}
 							name={currentMovie.movie_id} /> */}
 						{/* <p style={{color: "white"}}>Yes | No</p> */}
-						<p style={{color: "white"}} rating={currentMovie.rating} changeRating={changeRating} name={currentMovie.movie_id}>Up</p>
-						<p style={{color: "white"}} rating={currentMovie.rating} changeRating={changeRating} name={currentMovie.movie_id}>Down</p>
+						<p style={{color: "white"}} rating={currentMovie.rating} changeRating={changeRating} name={currentMovie.movie_id}>Like</p>
+						<p style={{color: "white"}} rating={currentMovie.rating} changeRating={changeRating} name={currentMovie.movie_id}>Dislike</p>
 					</div>
 				</div>
 				<div className="grid-item-label" style={{ position: "absolute" }}>

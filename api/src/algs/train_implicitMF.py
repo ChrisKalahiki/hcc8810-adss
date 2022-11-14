@@ -15,7 +15,7 @@ from lenskit.datasets import MovieLens
 
 # You can import different algorithms here from Lenskit
 # from lenskit.algorithms import als
-from lenskit.algorithms import user_knn as knn # DEBUG: This line was changed
+from lenskit.algorithms import item_knn as knn # DEBUG: This line was changed
 
 # We need to set the threading later to tbb
 # os.environ['MKL_THREADING_LAYER'] = 'tbb'
